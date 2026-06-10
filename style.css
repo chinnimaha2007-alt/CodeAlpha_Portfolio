@@ -1,0 +1,188 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+transition:0.4s;
+}
+
+#themeBtn{
+position:fixed;
+right:20px;
+top:20px;
+padding:10px 15px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:#1e293b;
+position:sticky;
+top:0;
+z-index:999;
+}
+
+nav ul{
+display:flex;
+gap:20px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+}
+
+.hero{
+text-align:center;
+padding:100px 20px;
+background:linear-gradient(
+135deg,
+#ff6ec4,
+#7873f5,
+#4facfe
+);
+}
+
+.hero img{
+width:180px;
+height:180px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid white;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+.hero h3{
+margin-top:10px;
+color:#fff;
+}
+
+.hero p{
+margin:20px auto;
+max-width:700px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:white;
+color:black;
+text-decoration:none;
+border-radius:10px;
+font-weight:bold;
+}
+
+section{
+padding:80px 50px;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.card{
+background:#1e293b;
+padding:20px;
+width:170px;
+text-align:center;
+border-radius:15px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #7873f5;
+}
+
+.project{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+max-width:700px;
+margin:20px auto;
+}
+
+.social{
+display:flex;
+justify-content:center;
+gap:30px;
+font-size:2rem;
+}
+
+.social a{
+color:white;
+transition:0.3s;
+}
+
+.social a:hover{
+transform:scale(1.2);
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#1e293b;
+}
+
+.dark{
+background:white;
+color:black;
+}
+
+.dark nav,
+.dark footer,
+.dark .card,
+.dark .project{
+background:#e2e8f0;
+color:black;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:2rem;
+}
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+}
